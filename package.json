@@ -1,0 +1,36 @@
+{
+  "name": "ejspassport-mashup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect": "^3.7.0",
+    "connect-mongo": "^3.2.0",
+    "cookie-parser": "^1.4.4",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "mongoose": "^5.9.1",
+    "morgan": "^1.9.1",
+    "nodemon": "^2.0.2",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcgould48/ejspassport-mashup.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jcgould48/ejspassport-mashup/issues"
+  },
+  "homepage": "https://github.com/jcgould48/ejspassport-mashup#readme"
+}
