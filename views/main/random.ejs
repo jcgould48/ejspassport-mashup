@@ -1,17 +1,18 @@
+  
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Random</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-       
+        <%- include('../partials/head')  %> 
+        <title>Random Users</title>
     </head>
     <body>
-        <div> <%random.forEach(({first, thumbnail})=>{%>
-            <img src = <%= thumbnail %> ></img>
-            <div><%= first %> </div>
-        <%}) %>
-        </div>
-        <h1>test</h1>
+        <header>Random Profiles</header>
+            <% sortedUsers.forEach(({name: {first, last}, picture: {large}}) => {%> 
+                <div class="randomBox">
+                    <img class="random" src=<%=`${large}`%>>
+                    <p><%= `${first} ${last}` %> </p>
+                </div>
+            <%}) %>
+        <%- include('../partials/footer') %> 
     </body>
 </html>
